@@ -20,6 +20,12 @@ public class DemoApplication {
         return "hello:"+s;
     }
 
+    @RequestMapping(value = "test")
+    public int test(int i,int j){
+        return i/j;
+    }
+
+
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
