@@ -14,10 +14,11 @@ public class DemoApplication {
 
     @RequestMapping(value = "hello",method = RequestMethod.GET)
     public String hello(String s) throws IOException {
+
         if(s.equals("0")){
             throw new IOException("wrong");
         }
-        return "hello:"+s;
+        return "hel22lo:"+s;
     }
 
     @RequestMapping(value = "test")
